@@ -1,0 +1,16 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "AllCourses";
+}
+
+<h1>AllCourses</h1>
+
+<div class="list-group">
+@foreach(string name in Model)
+{
+    <a href="/Courses/@name" class="list-group-item list-group-item-action">@name</a>
+}
+</div>
+
+  
+  
